@@ -1,0 +1,158 @@
+.container {
+  position: relative;
+  height: 900px;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.orbit_1 {
+  position: absolute;
+  width: 860px; 
+  height: 410px;
+  background: inherit;
+  border-radius: 900px/450px;  
+  border: 15px solid black
+}
+
+
+.orbit_2 {
+  position: absolute;
+  width: 860px; 
+  height: 410px;
+  background: inherit;
+  border-radius: 900px/450px;  
+  border: 15px solid black;
+  transform: rotate(120deg);
+}
+
+.orbit_3 {
+  position: absolute;
+  width: 860px; 
+  height: 410px;
+  background: inherit;
+  border-radius: 900px/450px;  
+  border: 15px solid black;
+  transform: rotate(240deg);
+}
+
+
+.electron_1 {
+  position: absolute;
+  width: 60px; 
+  height: 60px;
+  background: yellow;
+  border-radius: 50px/50px;  
+  border: 10px solid black;
+  animation-name: nameAnimation;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.electron_2 {
+  position: absolute;
+  top: -50px;
+  left: 250px;
+  width: 60px; 
+  height: 60px;
+  background: red;
+  border-radius: 50px/50px;  
+  border: 10px solid black;
+  animation-name: nameAnimation;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.electron_3 {
+  position: absolute;
+  top: -50px;
+  left: 250px;
+  width: 60px; 
+  height: 60px;
+  background: blue;
+  border-radius: 50px/50px;  
+  border: 10px solid black;
+  animation-name: nameAnimation;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+
+@keyframes nameAnimation {
+  0% {
+      top: 145px;
+      left: -60px;
+  }
+  6% {
+      top: 40px;
+      left: 0px;
+  }
+  12% {
+      top: -20px;
+      left: 120px;
+  }
+  18% {
+      top: -50px;
+      left: 250px;
+  }
+  25% {
+      top: -60px;
+      left: 390px;
+  }
+  32% {
+      top: -50px;
+      left: 530px;
+  }
+  38% {
+      top: -20px;
+      left: 660px;
+  }
+  44% {
+      top: 40px;
+      left: 770px;
+  }
+  50% {
+      top: 145px;
+      left: 840px;
+  }
+  56% {
+      top: 270px;
+      left: 770px;
+  }
+  62% {
+      top: 310px;
+      left: 660px;
+  }
+  68% {
+      top: 360px;
+      left: 530px;
+  }
+  75% {
+      top: 370px;
+      left: 390px;
+  }
+  81% {
+      top: 360px;
+      left: 250px;
+  }
+  87% {
+      top: 310px;
+      left: 120px;
+  }
+  93% {
+      top: 270px;
+      left: 0px;
+  }
+  100% {
+      top: 145px;
+      left: -60px;
+  }
+}
